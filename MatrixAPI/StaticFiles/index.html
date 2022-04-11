@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <title>matrix multiplication operation · Bootstrap v5.0</title>
+  <!-- Bootstrap core CSS -->
+  <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <div class="col-lg-8 mx-auto p-3 py-md-5">
+    <header class="d-flex align-items-center pb-3 mb-5 border-bottom">
+      <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+        <span class="fs-4">matrix multiplication operation</span>
+      </a>
+    </header>
+
+    <main>
+      <h1>Get started with Bootstrap</h1>
+      <p class="fs-5 col-12">The application will consist of two pages. One [Input page] for data entry, second
+        [Output page] will display the result. User will set dimensions of both matrixes in range from 1 to 5 and then
+        supply input values. User clicks “=” button which submits request to the calculator web service (B), waits for a
+        result and the result will be displayed on the Output page.</p>
+      <hr>
+      <div class="col-6 mb-3">
+        <h2>Matrix dimensions</h2>
+        <div class="row g-2">
+          <div class="col-6 mb-3">
+            <label for="rowA" class="form-label">Select rows for Matrix A</label>
+            <select class="form-select" aria-label="Default select example" id="selector_rowA">
+              <option selected value=1>1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+
+          </div>
+          <div class="col-6">
+            <label for="colA" class="form-label">Select columns for Matrix A</label>
+            <select class="form-select" aria-label="Default select example" id="selector_colA">
+              <option selected value=1>1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+        <div class="row g-2">
+          <div class="col-6 mb-3">
+            <label for="rowA">Select rows for Matrix B</label>
+            <select class="form-select" aria-label="Default select example" id="selector_rowb">
+              <option selected value=1>1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+
+          </div>
+          <div class="col-6">
+            <label for="colA">Select columns for Matrix b</label>
+            <select class="form-select" aria-label="Default select example" id="selector_colb">
+              <option selected value=1>1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 mb-3">
+        <h2>Matrix Values</h2>
+        <br>
+        <h3>Matrix A</h3>
+        <div id="matrixContainerA" class="mb-3">
+        </div>
+        <h3>Matrix B</h3>
+        <div id="matrixContainerB" class="mb-3">
+        </div>
+      </div>
+      <button type="button" id="submit">=</button>
+      <div class="col-12 mb-3">
+        <h2>Matrix Results</h2>
+        <br>
+
+        <div id="result" class="mb-3">
+        </div>
+
+      </div>
+
+
+    </main>
+    <footer class="pt-5 my-5 text-muted border-top">
+      Based on Bootstrap starter template by the Bootstrap team &middot; &copy; 2021
+    </footer>
+  </div>
+
+
+  <script src="dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <script src="dist/js/lib.js"></script>
+
+
+</body>
+
+</html>

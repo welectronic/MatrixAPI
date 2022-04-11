@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MatrixAPI</name>
+    </assembly>
+    <members>
+        <member name="T:MatrixAPI.Controllers.MatrixApiController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MatrixAPI.Controllers.MatrixApiController.#ctor(Microsoft.Extensions.Logging.ILogger{MatrixAPI.Controllers.MatrixApiController})">
+            <summary>
+            
+            </summary>
+            <param name="logger"></param>
+        </member>
+        <member name="M:MatrixAPI.Controllers.MatrixApiController.Get">
+            <summary>
+            Endpoint que realiza las multiplicaciones de matrices
+            </summary>
+            <returns>Devuelve las matrices multiplicadas o el error con su respectiva explicación</returns>
+        </member>
+        <member name="T:MatrixAPI.MatrixResponse">
+            <summary>
+            Estructura de respuesta API
+            </summary>
+        </member>
+        <member name="P:MatrixAPI.MatrixResponse.Result">
+            <summary>
+            Texto de respuesta
+            </summary>
+        </member>
+        <member name="T:MatrixAPI.Startup">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MatrixAPI.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="P:MatrixAPI.Startup.Configuration">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MatrixAPI.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime. Use this method to add services to the container.
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:MatrixAPI.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+    </members>
+</doc>

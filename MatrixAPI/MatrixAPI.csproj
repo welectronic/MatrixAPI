@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>3715a05d-a3fd-4cbd-a43d-2f466ff69ced</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>D:\MatrixAPI\MatrixAPI\MatrixAPI\MatrixAPI.xml</DocumentationFile>
+  </PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Relesae|AnyCPU'">
+		<DocumentationFile>D:\MatrixAPI\MatrixAPI\MatrixAPI\MatrixAPI.xml</DocumentationFile>
+	</PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.11.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.0" />
+  </ItemGroup>
+
+
+</Project>
